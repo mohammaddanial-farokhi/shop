@@ -1,0 +1,50 @@
+html
+{
+    direction: ltr;
+
+}
+* , *::before , *::after{
+    box-sizing: inherit;
+}
+
+body
+{
+    font-family:sourse-sans-pro;
+    box-sizing: border-box;
+    margin: 0 ;
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+h2{
+    margin: 0em;
+}
+h3{
+    margin: 0em;
+}
+.clearfix::before
+{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+.clearfix::after
+{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+

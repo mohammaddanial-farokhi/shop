@@ -1,0 +1,46 @@
+.wrapper
+{
+    width: 95%;
+    margin: 10px auto;
+}
+@font-face {
+    font-family: sourse-sans-pro;
+    src: url(../font/sourse_sans_pro/SourceSansPro-Black.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-BlackIt.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-Bold.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-BoldIt.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-ExtraLight.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-ExtraLightIt.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-It.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-Light.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-LightIt.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-Regular.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-Semibold.otf) format('otf')
+        url(../font/sourse_sans_pro/SourceSansPro-SemiboldIt.otf) format('otf');
+
+}
+/*header*/
+.header
+{
+    height: 300px;
+    background-color: #232f3e;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    
+}
+.topinfo
+{
+    direction: rtl;
+    border-bottom: 1px solid #303e4f;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.topullink
+{
+    color: #bcbdc7;
+}
+.topul
+{
+    display: flex;
+}
