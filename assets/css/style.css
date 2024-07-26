@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Vazir-medium;
+    src: url(../font/vazir-font-v16.1.0/Vazir-Medium.eot) format("eot") ,
+         url(../font/vazir-font-v16.1.0/Vazir-Medium.ttf) format("ttf"),
+         url(../font/vazir-font-v16.1.0/Vazir-Medium.woff) format("woff"),
+         url(../font/vazir-font-v16.1.0/Vazir-Medium.woff2) format("woff2");
+         font-weight: 700;
+         font-style: normal;
+}
+* , body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Vazir-medium ;
+}
+a{
+    text-decoration: none;
+}
+ul,li,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bg-top-nav{
+    background-color: #232f3e;
+}
+.logo-img{
+    width: 100px;
+}
+.login-icon{
+    margin-right: 10px;
+}
+.basket{
+    color: white;
+    font-size: 20px
+}
+.basket::hover{
+    background-color: white ;
+    border-radius: 50%;
+}
+.search-dropdown{
+    border-radius: 0 ;
+}
