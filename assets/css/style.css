@@ -31,6 +31,8 @@ ul,li,ol{
     margin-right: 10px;
 }
 .basket{
+    
+    vertical-align: -2px;
     color: white;
     font-size: 20px
 }
@@ -40,4 +42,41 @@ ul,li,ol{
 }
 .search-dropdown{
     border-radius: 0 ;
+}
+.custom-a::after{
+    vertical-align: 1px;
+}
+.custom-btn{
+    border-radius:0 20px 20px 0 !important ;
+}
+.custom-btn1{
+    border-radius: 20px 0 0 20px !important;
+}
+.custom-div{
+    width: 360px !important;
+}
+.custom-img{
+    width: 70px;
+}
+.basket-icons{
+    width: 30px;
+    height: 30px;
+}
+.custom-div1{
+    width: 30px;
+}
+.custom-ul{
+    display: flex; /* تبدیل به Flex Container */
+    justify-content: space-around; /* یا space-between یا هر خاصیت دیگری که مایلید */
+    list-style: none; /* حذف نقاط فهرست */
+    padding: 0; /* حذف فاصله داخلی */
+    margin: 0; /* حذف فاصله خارجی */
+}
+.custom-li{
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.custom-close{
+    margin-left: 3px;
+    width: 5px;
 }
