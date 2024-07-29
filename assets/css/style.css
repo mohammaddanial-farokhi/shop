@@ -151,3 +151,7 @@ ul,li,ol{
 .nav-wrapper{
     margin-right: 20px;
 }
+/* Main */
+.slider-wrapper{
+    height: 500px;
+}
