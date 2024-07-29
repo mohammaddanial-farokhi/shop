@@ -13,18 +13,18 @@
         <div class="container-fluid bg-top-nav">
             <div class="row"> 
                 <div class="container">
-                    <div class="row my-2">
-                        <div class="col-sm-12 col-md-2">
+                    <div class="row my-2 g-0">
+                        <div class=" col-4 col-sm-4 col-md-4 col-lg-2  d-flex justify-content-center align-items-center order-1 order-sm-1 order-lg-0 ">
                             <div>
                                 <a href="#">
-                                    <img class="logo-img" src="assets/img/logo1.png" alt="logo">
+                                    <img class="logo-img " src="assets/img/logo1.png" alt="logo">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 my-auto">  
+                        <div class="col-10 col-sm-9 col-md-9 col-lg-6 my-auto order-lg-1 order-4 order-sm-4">  
                             <div >
                                 <div class="input-group ">
-                                    <button class="btn btn-light dropdown-toggle search-dropdown custom-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">دسته بندی</button>
+                                    <button class="btn btn-light dropdown-toggle search-dropdown custom-btn d-none d-sm-block " type="button" data-bs-toggle="dropdown" aria-expanded="false">جستجوی سریع</button>
                                     <ul class="dropdown-menu text-center">
                                       <li><a class="dropdown-item" href="#">موبایل</a></li>
                                       <li><a class="dropdown-item" href="#">پوشاک</a></li>
@@ -35,22 +35,23 @@
                                   </div>
                             </div>
                         </div>
-                        <div class="col-sm1-12 col-md-4 my-auto ">
-                            <div>
-                                <button type="button" class="btn btn-outline-light mx-2">ورود/ثبت  نام<i class="fa-regular fa-user login-icon"></i></button>
+                        <div class=" col-4 col-sm-4 col-md-4 col-lg-2  order-lg-2 order-0 g-0 d-flex justify-content-center align-items-center custom-login">
+                            <button type="button" class="btn btn-outline-light mx-2 login-btn"><span class="d-none d-md-inline  ">ورود/ثبت  نام</span><i class="fa-regular fa-user login-icon"></i></button>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-2  my-auto order-lg-3 order-2 ">
+                            <div class="basket-wrapper">
                                 <div class="dropdown d-inline ">
-                                    <a class="btn btn-secondary dropdown-toggle custom-a" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                      سبد خرید 
+                                    <a class="btn btn-secondary dropdown-toggle p-0 border-0 custom-a" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <span class="d-none d-md-inline" >سبد خرید</span>
                                       <button type="button" class="btn px-1 position-relative">
                                         <i class="fa-solid fa-cart-shopping basket mx-1"></i>
-                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                          1+
-                                          <span class="visually-hidden">unread messages</span>
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger custom-alert">
+                                        <span class="visually-hidden">unread messages</span>
                                         </span>
                                       </button>
                                     </a>
-                                    <ul class="dropdown-menu text-center custom-div" aria-labelledby="dropdownMenuLink">
-                                        <li>
+                                    <ul class="dropdown-menu text-center custom-div custom-ul2" aria-labelledby="dropdownMenuLink">
+                                        <li >
                                             <a class="dropdown-item d-flex px-0" href="#">
                                                 <button type="button" class="btn-close my-auto custom-close px-3" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 <img class="custom-img" src="assets/img/s24.jpg" alt="">
@@ -78,6 +79,118 @@
                                   </div>
                         
                             </div>
+                        </div>
+                        <div class="col-1 col-md-2 col-lg-12 nav-wrapper order-3 order-lg-4  py-1">
+                            <nav class="nav-helper">
+                                <div class="container px-0">
+                                    <div class="row">
+                                        <nav class="navbar navbar-expand-lg navbar-dark p-0 border-0  ">
+                                            <div class="container px-0">
+                                                <button class="navbar-toggler border-0"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon border-0" ></span>
+                                                </button>
+                                              <div class="collapse navbar-collapse border-0 custom-div2" id="navbarNavDropdown" >
+                                                <ul class="navbar-nav mx-auto">
+                                                    <li class="nav-item dropdown mega-menu-li ">
+                                                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          دسته بندی ها
+                                                        </a>
+                                                        <ul class="dropdown-menu mega-menu-ul pt-3 mt-0 border-0 shadow" aria-labelledby="navbarDropdownMenuLink">
+                                                            <div class="">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12 col-lg-3">
+                                                                            <ul class="mega-ul ">
+                                                                                <li><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i>لوازم خانگی</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> سشوار </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block">ماشین لباس شویی</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> گاز آشپزخانه</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> میز ناهارخوری</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> یخچال فریزر</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> تلوزیون </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> جاروبرقی </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4><i class="fa-solid fa-caret-left ms-2"></i> لپتاپ</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> ایسوس </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> مک </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> ایسر </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i> لباس</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> لباس زنانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> لباس مردانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> کفش‌های ورزشی  </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block">  کیف و کوله‌پشتی  </li></a>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-lg-3">
+                                                                            <ul class="mega-ul">
+                                                                                <li><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i>لوازم خانگی</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> سشوار </li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block">ماشین لباس شویی</li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> گاز آشپزخانه</li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> میز ناهارخوری</li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> یخچال فریزر</li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> تلوزیون </li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> جاروبرقی </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4><i class="fa-solid fa-caret-left ms-2"></i> لپتاپ</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> ایسوس </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> مک </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> ایسر </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i> لباس</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> لباس زنانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> لباس مردانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> کفش‌های ورزشی  </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block">  کیف و کوله‌پشتی  </li></a>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-lg-3">
+                                                                            <ul class="mega-ul">
+                                                                                <li><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i>لوازم خانگی</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> سشوار </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block">ماشین لباس شویی</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> گاز آشپزخانه</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> میز ناهارخوری</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> یخچال فریزر</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> تلوزیون </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> جاروبرقی </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4><i class="fa-solid fa-caret-left ms-2"></i> لپتاپ</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> ایسوس </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> مک </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> ایسر </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i> لباس</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> لباس زنانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> لباس مردانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> کفش‌های ورزشی  </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block">  کیف و کوله‌پشتی  </li></a>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-sm-3 col-lg-3">
+                                                                            <img class="mega-img position-absolute d-none d-md-block" src="assets/img/items-removebg.png" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <li><a class="dropdown-item " href="#">Action</a></li>
+                                                                <li><a class="dropdown-item " href="#">Another action</a></li>
+                                                                <li><a class="dropdown-item " href="#">Something else here</a></li> -->
+                                                            </div>
+                                                        </ul>
+                                                      </li>
+                                                    <li class="nav-item ">
+                                                        <a class="nav-link   " aria-current="page" href="#">تخفیف ها</a>
+                                                    </li>
+        
+                                                    <li class="nav-item ">
+                                                        <a class="nav-link" href="#">پر فروش ترین ها</a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a class="nav-link" href="#">پشتیبانی</a>
+                                                    </li>
+        
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </nav>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
                     </div>
                 </div>

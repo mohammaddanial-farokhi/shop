@@ -34,7 +34,7 @@ ul,li,ol{
     
     vertical-align: -2px;
     color: white;
-    font-size: 20px
+    font-size: 15px
 }
 .basket::hover{
     background-color: white ;
@@ -47,7 +47,13 @@ ul,li,ol{
     vertical-align: 1px;
 }
 .custom-btn{
+
     border-radius:0 20px 20px 0 !important ;
+}
+.custom-btn::after
+{
+    margin-right: 5px;
+    vertical-align: -1px;
 }
 .custom-btn1{
     border-radius: 20px 0 0 20px !important;
@@ -79,4 +85,69 @@ ul,li,ol{
 .custom-close{
     margin-left: 3px;
     width: 5px;
+}
+.custom-alert{
+    transform: translate(-94%, -19%) !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
+.nav-helper{
+    position: relative;
+}
+.mega-menu-li{
+    position: unset !important;
+}
+.mega-menu-ul{
+    width: 100%;
+}
+.mega-img{
+    width: 20%;
+    left: 0;
+    bottom: 0;
+
+}
+.mega-ul li a h4:hover{
+    color: red;
+}
+.mega-ul a li:hover{
+    margin-right: 20px;
+}
+.mega-ul a li ,.mega-ul li a h4{
+    transition: .5s ease;
+}
+@media screen and (max-width:991px){
+    .login-icon{
+        margin-right: 0;
+    }
+    .custom-login{
+        justify-content: start !important;
+    }
+    .basket-wrapper{
+        display: flex;
+        justify-content: end;
+    }
+    .nav-wrapper{
+        display: flex;
+        justify-content: start;
+        position: relative;
+    }
+    .nav-helper{
+        position: unset;
+    }
+    .custom-div2{
+        top: 50px;
+        background-color: #232f3e;
+        position: absolute;
+        width: 200px;
+        padding-right: 15px;
+    }
+    .mega-ul li a h4 , .custom-li2{
+        margin: 0 !important;
+    } 
+    .custom-ul2{
+        top: 9px !important;
+    }
+}
+.nav-wrapper{
+    margin-right: 20px;
 }
