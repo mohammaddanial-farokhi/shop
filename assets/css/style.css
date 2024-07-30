@@ -155,3 +155,41 @@ ul,li,ol{
 .slider-wrapper{
     height: 500px;
 }
+.shipping div i{
+    margin-top: auto;
+    font-size: 30px;
+}
+/* @media screen and (max-width:1200px) {
+    .shipping div i {
+        font-size: 25px;
+    }
+    .shipping div p{
+        font-size: 12px;
+    }
+} */
+@media screen and (max-width:769px) {
+    .shipping div i {
+        font-size: 25px;
+        margin-left: 5px !important;
+    }
+    .shipping div p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:576px) {
+    .shipping div i {
+        font-size: 15px;
+        margin-left: 5px !important;
+    }
+    .shipping div p{
+        font-size: 8px;
+    }
+
+}
+@media screen and (max-width:992px) {
+    .carousel-indicators{
+        bottom: -21px;
+    }
+}
+
+
