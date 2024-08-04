@@ -220,8 +220,11 @@ ul,li,ol{
     transition: .5s ease;
     background-color: rgb(225, 225, 225);
 }
-.fs-14{
+.fs-12{
     font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
 }
 .laptop-img{
     width: 86%;
@@ -277,4 +280,53 @@ ul,li,ol{
 }
 .list-group a:focus{
     transform: scale(1.2);
+}
+@media screen and (max-width:1200px) {
+    .offer-img-banner{
+        max-width: 75%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    .card-text{
+        font-size: 14px !important;
+    }
+    .card-wrapper div span , .card-wrapper div s{
+        font-size: 14px;
+    }
+    .offer-persent{
+        font-size: 10px !important;
+    }
+    .card-wrapper button{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:768px) {
+    .card-text{
+        font-size: 11px !important;
+    }
+    .card-wrapper div span , .card-wrapper div s{
+        font-size: 12px;
+    }
+    .offer-persent{
+        font-size: 9px !important;
+    }
+    .card-wrapper button{
+        font-size: 10px;
+    }
+}
+.animated-nav-item{
+    overflow: hidden;
+    height: 29px;
+    transition: .5s;
+}
+.first-animated-a,.second-animated-a{
+    transition: .3s ;
+}
+.animated-nav-item:hover .first-animated-a {
+    transform: translateY(-32px);
+}
+.animated-nav-item:hover .second-animated-a{
+    transform: translateY(-39px);
+    color: white !important;
 }

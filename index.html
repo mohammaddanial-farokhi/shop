@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/2d2ceac84d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -173,15 +176,18 @@
                                                             </div>
                                                         </ul>
                                                       </li>
-                                                    <li class="nav-item ">
-                                                        <a class="nav-link   " aria-current="page" href="#">تخفیف ها</a>
+                                                    <li class="nav-item animated-nav-item">
+                                                        <a class="nav-link  first-animated-a " aria-current="page" href="#">تخفیف ها</a>
+                                                        <a class="nav-link second-animated-a  " aria-current="page" href="#">تخفیف ها</a>
                                                     </li>
         
-                                                    <li class="nav-item ">
-                                                        <a class="nav-link" href="#">پر فروش ترین ها</a>
+                                                    <li class="nav-item animated-nav-item">
+                                                        <a class="nav-link first-animated-a" href="#">پر فروش ترین ها</a>
+                                                        <a class="nav-link second-animated-a " href="#">پر فروش ترین ها</a>
                                                     </li>
-                                                    <li class="nav-item ">
-                                                        <a class="nav-link" href="#">پشتیبانی</a>
+                                                    <li class="nav-item animated-nav-item">
+                                                        <a class="nav-link first-animated-a" href="#">پشتیبانی</a>
+                                                        <a class="nav-link second-animated-a " href="#">پشتیبانی</a>
                                                     </li>
         
                                                 </ul>
@@ -267,8 +273,8 @@
         </div>
         <div class="container-fluid mt-4 px-3">
             <h1 class="text-center mt-2">محصولات</h1>
-            <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2 mb-2">
+            <div class="row justify-content-center">
+                <!-- <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2 mb-2">
                     <a href="#" class="text-decoration-none text-dark">
                         <div class="cat-item rounded p-2">
                             <div class="container-fluid px-0">
@@ -285,7 +291,7 @@
                         </div>
                     </a>
 
-                </div>
+                </div> -->
                 <div class="col-sm-4 col-md-4  col-lg-4 col-xl-2 mb-2">
                     <a href="#" class="text-decoration-none text-dark">
                         <div class="cat-item rounded p-2">
@@ -376,107 +382,210 @@
                 
             </div>
         </div>
+
+        <!-- offer nav -->
         <div class="container">
             <div class="row mt-5">
                 <div class="row">
                     <div class="col-12 d-flex">
                       <div class="list-group custom-list-group" id="list-tab" role="tablist">
                         <a class="custom-list-group-item custom-list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">تکنولوژی</a>
-                        <a class="custom-list-group-item custom-list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-                        <a class="custom-list-group-item custom-list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-                        <a class="custom-list-group-item custom-list-group-item-action border-start-0" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+                        <a class="custom-list-group-item custom-list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">لوازم خانگی</a>
+                        <a class="custom-list-group-item custom-list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">لوازم بهداشتی</a>
+                        <a class="custom-list-group-item custom-list-group-item-action border-start-0" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">عطر و ادکلن</a>
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                            <div class="container-fluid offer-wrapper">
+                            <div class="container-fluid offer-wrapper pb-2">
+                                <div class="row">
+                                    <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>336,000 تومان</span>
+                                                <span class=" badge rounded-pill offer-persent my-auto">20%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">457,000</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>336,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">457,000</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>336,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">457,000</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>336,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">457,000</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>336,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">457,000</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2  d-flex justify-content-center flex-column">
+                                    
+                                        <img class="mx-auto" src="assets/img/FeaturedPromos.svg" alt="">
+                                        <img class="img-fluid offer-img-banner" src="assets/img/offer.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                            <div class="container-fluid offer-wrapper pb-2">
                                 <div class="row">
                                     <div class="col-2 ">
                                         <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
                                             <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
-                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <img class="w-50 mx-auto" src="assets/img/havapaz.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
-                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                              <p class="card-text fs-14">هواپز شیائومی مدل MAF01 3/5L 2022</p>
                                             </div>
                                             <div class="d-flex justify-content-between">
-                                                <span>336,000 تومان</span>
-                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                                <span>7,450,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">24%</span>
                                             </div>
                                             <div>
-                                                <s style="color: #C0C2C5;">457,000</s>
+                                                <s style="color: #C0C2C5;">9,750,000</s>
                                             </div>
                                             <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
                                             
                                           </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 ">
                                         <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
                                             <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
-                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <img class="w-50 mx-auto" src="assets/img/havapaz.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
-                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                              <p class="card-text fs-14">هواپز شیائومی مدل MAF01 3/5L 2022</p>
                                             </div>
                                             <div class="d-flex justify-content-between">
-                                                <span>336,000 تومان</span>
-                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                                <span>7,450,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">24%</span>
                                             </div>
                                             <div>
-                                                <s style="color: #C0C2C5;">457,000</s>
+                                                <s style="color: #C0C2C5;">9,750,000</s>
                                             </div>
                                             <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
                                             
                                           </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 ">
                                         <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
                                             <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
-                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <img class="w-50 mx-auto" src="assets/img/havapaz.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
-                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                              <p class="card-text fs-14">هواپز شیائومی مدل MAF01 3/5L 2022</p>
                                             </div>
                                             <div class="d-flex justify-content-between">
-                                                <span>336,000 تومان</span>
-                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                                <span>7,450,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">24%</span>
                                             </div>
                                             <div>
-                                                <s style="color: #C0C2C5;">457,000</s>
+                                                <s style="color: #C0C2C5;">9,750,000</s>
                                             </div>
                                             <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
                                             
                                           </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 ">
                                         <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
                                             <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
-                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <img class="w-50 mx-auto" src="assets/img/havapaz.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
-                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                              <p class="card-text fs-14">هواپز شیائومی مدل MAF01 3/5L 2022</p>
                                             </div>
                                             <div class="d-flex justify-content-between">
-                                                <span>336,000 تومان</span>
-                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                                <span>7,450,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">24%</span>
                                             </div>
                                             <div>
-                                                <s style="color: #C0C2C5;">457,000</s>
+                                                <s style="color: #C0C2C5;">9,750,000</s>
                                             </div>
                                             <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
                                             
                                           </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 ">
                                         <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
                                             <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
-                                            <img class="w-50 mx-auto" src="assets/img/o1.jpg" class="card-img-top" alt="...">
+                                            <img class="w-50 mx-auto" src="assets/img/havapaz.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
-                                              <p class="card-text ">محافظ برق هوشمند تایمر دار</p>
+                                              <p class="card-text fs-14">هواپز شیائومی مدل MAF01 3/5L 2022</p>
                                             </div>
                                             <div class="d-flex justify-content-between">
-                                                <span>336,000 تومان</span>
-                                                <span class="badge rounded-pill offer-persent my-auto">20%</span>
+                                                <span>7,450,000 تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">24%</span>
                                             </div>
                                             <div>
-                                                <s style="color: #C0C2C5;">457,000</s>
+                                                <s style="color: #C0C2C5;">9,750,000</s>
                                             </div>
                                             <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
                                             
@@ -487,22 +596,251 @@
                                         <img class="mx-auto" src="assets/img/FeaturedPromos.svg" alt="">
                                         <img class="img-fluid" src="assets/img/offer.jpg" alt="">
                                     </div>
+                                </div>   
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                            <div class="container-fluid offer-wrapper pb-2">
+                                <div class="row">
+                                    <div class="col-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text fs-14">اسپری ضد جوش مدل SALICYLE2</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>275,000تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">34%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">417,800</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text fs-14">اسپری ضد جوش مدل SALICYLE2</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>275,000تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">34%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">417,800</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text fs-14">اسپری ضد جوش مدل SALICYLE2</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>275,000تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">34%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">417,800</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text fs-14">اسپری ضد جوش مدل SALICYLE2</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>275,000تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">34%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">417,800</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-2 ">
+                                        <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                            <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                            <img class="w-50 mx-auto" src="assets/img/o2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text fs-14">اسپری ضد جوش مدل SALICYLE2</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>275,000تومان</span>
+                                                <span class="badge rounded-pill offer-persent my-auto">34%</span>
+                                            </div>
+                                            <div>
+                                                <s style="color: #C0C2C5;">417,800</s>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                            
+                                          </div>
+                                    </div>
+                                    <div class="col-2 d-flex justify-content-center flex-column">
+                                
+                                        <img class="mx-auto" src="assets/img/FeaturedPromos.svg" alt="">
+                                        <img class="img-fluid" src="assets/img/offer.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                <div class="container-fluid offer-wrapper pb-2">
+                                    <div class="row">
+                                        <div class="col-2 ">
+                                            <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                                <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                                <img class="w-50 mx-auto" src="assets/img/o3.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <p class="card-text fs-14">ادو پرفیوم مردانه مدل بلو شنل</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>336,000تومان</span>
+                                                    <span class="badge rounded-pill offer-persent my-auto">63%</span>
+                                                </div>
+                                                <div>
+                                                    <s style="color: #C0C2C5;">475,800</s>
+                                                </div>
+                                                <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                                
+                                              </div>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                                <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                                <img class="w-50 mx-auto" src="assets/img/o3.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <p class="card-text fs-14">ادو پرفیوم مردانه مدل بلو شنل</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>336,000تومان</span>
+                                                    <span class="badge rounded-pill offer-persent my-auto">63%</span>
+                                                </div>
+                                                <div>
+                                                    <s style="color: #C0C2C5;">475,800</s>
+                                                </div>
+                                                <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                                
+                                              </div>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                                <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                                <img class="w-50 mx-auto" src="assets/img/o3.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <p class="card-text fs-14">ادو پرفیوم مردانه مدل بلو شنل</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>336,000تومان</span>
+                                                    <span class="badge rounded-pill offer-persent my-auto">63%</span>
+                                                </div>
+                                                <div>
+                                                    <s style="color: #C0C2C5;">475,800</s>
+                                                </div>
+                                                <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                                
+                                              </div>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                                <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                                <img class="w-50 mx-auto" src="assets/img/o3.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <p class="card-text fs-14">ادو پرفیوم مردانه مدل بلو شنل</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>336,000تومان</span>
+                                                    <span class="badge rounded-pill offer-persent my-auto">63%</span>
+                                                </div>
+                                                <div>
+                                                    <s style="color: #C0C2C5;">475,800</s>
+                                                </div>
+                                                <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                                
+                                              </div>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <div class="card card-wrapper p-2 mt-3" style="width: 11.5 rem;">
+                                                <img class="offer-card-text mx-auto" src="assets/img/IncredibleOffer.svg" alt="">
+                                                <img class="w-50 mx-auto" src="assets/img/o3.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <p class="card-text fs-14">ادو پرفیوم مردانه مدل بلو شنل</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>336,000تومان</span>
+                                                    <span class="badge rounded-pill offer-persent my-auto">63%</span>
+                                                </div>
+                                                <div>
+                                                    <s style="color: #C0C2C5;">475,800</s>
+                                                </div>
+                                                <button type="button" class="btn btn-outline-danger">افزودن به سبد خرید</button>
+                                                
+                                              </div>
+                                        </div>
+                                        <div class="col-2 d-flex justify-content-center flex-column">
+                                    
+                                            <img class="mx-auto" src="assets/img/FeaturedPromos.svg" alt="">
+                                            <img class="img-fluid" src="assets/img/offer.jpg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">تست1</div>
-                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">تست2</div>
-                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">تست3</div>
+
                       </div>
                     </div>
                   </div>
             </div>
         </div>
+        <!-- offer nav -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div>
+                        <div class="slider1">
+                            <div>test text</div>
+                            <div>test text</div>
+                            <div>test text</div>
+                            <div>test text</div>
+                            <div>test text</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
     </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $(document).ready(function(){
+        $('.slider1').slick({
+         
+        });
+    });
+    </script>
 </body>
 </html>
-
-<i class="fa-solid fa-cart-shopping basket mx-1"></i>
