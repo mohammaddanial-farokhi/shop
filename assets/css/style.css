@@ -135,6 +135,7 @@ ul,li,ol{
         position: unset;
     }
     .custom-div2{
+        z-index: 3;
         top: 50px;
         background-color: #232f3e;
         position: absolute;
@@ -329,4 +330,41 @@ ul,li,ol{
 .animated-nav-item:hover .second-animated-a{
     transform: translateY(-39px);
     color: white !important;
+}
+.slider-content{
+    max-width: 250px;
+    overflow: hidden;
+}
+.slider-price{
+    padding-bottom: 0 !important;
+}
+.slider-content-wrapper:hover .slider-content{
+    filter: blur(3px);
+
+}
+.slider-content 
+{
+    transition: .5s ease;
+}
+.slider-btn{
+   display: none !important;
+   top: -150px;
+}
+.slider-content-wrapper:hover .slider-btn{
+    display: inline !important;
+
+}
+.slider-content-wrapper{
+    border-radius: 5px;
+}
+.slider-content:hover {
+    box-shadow:0 0 7px 2px #b1b1b1;
+}
+.slider-send-icon{
+    color: #1028FF;
+    font-size: 13px;
+}
+.slider-send-text{
+    color: #626684;
+    font-size: 11px ;
 }
