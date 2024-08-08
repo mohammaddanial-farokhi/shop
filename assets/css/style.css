@@ -332,7 +332,8 @@ ul,li,ol{
     color: white !important;
 }
 .slider-content{
-    max-width: 250px;
+     max-width: inherit;
+     max-height: inherit;
     overflow: hidden;
 }
 .slider-price{
@@ -348,15 +349,21 @@ ul,li,ol{
 }
 .slider-btn{
    display: none !important;
-   top: -150px;
 }
 .slider-content-wrapper:hover .slider-btn{
-    display: inline !important;
+     display: block !important;
+    /* justify-content: center;
+    align-items: center; */ 
+    position: relative;
+    top: 0px;
+    left: 0;
 
 }
-.slider-content-wrapper{
+.slider-content-wrapper::after{
+    position: absolute;
     border-radius: 5px;
 }
+
 .slider-content:hover {
     box-shadow:0 0 7px 2px #b1b1b1;
 }
@@ -367,4 +374,53 @@ ul,li,ol{
 .slider-send-text{
     color: #626684;
     font-size: 11px ;
+}
+.owl-nav{
+    display: flex !important;
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ /*slider custom */
+.prev {
+    cursor: pointer;
+    z-index: 10;
+    top: 186px;
+    right: -34px;
+}
+.next{
+    cursor: pointer;
+    z-index:10;
+    top: 186px;
+    right: 34px;
+}
+
+.slick-dots li button:before
+{
+    font-size: 30px !important;
+    line-height: 20px;
+}
+ /*slider custom */
+.no-discount{
+    padding-bottom: 34px !important;
+}
+
+.truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 1200px) {
+    .odd-p{
+        line-height: 1.5 !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card-body div span , .card-body div s{
+        font-size: 11px;
+    }
 }
