@@ -461,9 +461,14 @@ footer{
 
 }
 .informations , .helpful-link {
-    margin-top: 3%;
+    margin-top: 5%;
 }
-.social-footer-container i , .social-footer-container svg{
+.social-footer-container svg{
+    width: 50px;
+    height: 50px;
+    margin: 8px 15px;
+}
+.social-footer-container i {
     font-size: 50px;
     margin: 8px 15px;
     color: white;
@@ -471,8 +476,59 @@ footer{
 .informations a p ,.helpful-link a p {
     margin-bottom: 5px;
 }
+
  @media screen and (max-width:1200px) {
-    .informations h4 , .helpful-link h4 ,.email-footer-container h5 ,.about-container h4{
+    .informations h4 , .helpful-link h4 ,.email-footer-container h5 ,.about-container h4 , .contant-container h5{
         font-size: 20px;
+    }
+    .informations p , .helpful-link p ,.email-footer-containerp p ,.about-container p , .contant-container span , .copyright p , .email-footer-container div button{
+        font-size: 12px;
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+    .social-footer-container i {
+        font-size: 40px;
+    }
+    .social-footer-container svg{
+        width: 40px;
+        height: 40px;
+    }
+    .informations ,  .helpful-link {
+        margin-top: 6%;
+    }
+
+ }
+ @media screen and (max-width:992px) {
+    .informations ,  .helpful-link {
+        margin-top: 9%;
+    }
+
+ }
+ @media screen and (max-width:768px) {
+    .informations h4 , .helpful-link h4 ,.email-footer-container h5 ,.about-container h4 , .contant-container h5{
+        font-size: 18px;
+    }
+    .informations p , .helpful-link p ,.email-footer-containerp p ,.about-container p , .contant-container span ,.copyright p{
+        font-size: 11px;
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+    .informations ,  .helpful-link {
+        margin-top: 11%;
+    }
+    .social-footer-container i {
+        font-size: 30px;
+    }
+    .social-footer-container svg{
+        width: 30px;
+        height: 30px;
+    }
+
+ }
+ @media screen and (max-width:576px){
+    .helpful-link h4{
+        font-size: 15px;
     }
  }
