@@ -383,8 +383,17 @@ ul,li,ol{
     justify-content: space-between;
 }
 
- /*slider custom */
-.prev {
+ /*start slider custom */
+.custom-slider-headtext{
+    font-size: 27px;
+    top: 20px;
+    right: 12px;
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    border-bottom: 3px solid #EF3B50;
+}
+.prev{
     cursor: pointer;
     z-index: 10;
     top: 186px;
@@ -396,13 +405,27 @@ ul,li,ol{
     top: 186px;
     right: 34px;
 }
+.prev1{
+    cursor: pointer;
+    z-index: 10;
+    top: 186px;
+    right: -34px;
+}
+.next1{
+    cursor: pointer;
+    z-index:10;
+    top: 186px;
+    right: 34px;
+}
 
 .slick-dots li button:before
 {
     font-size: 30px !important;
     line-height: 20px;
 }
- /*slider custom */
+
+ /* end slider custom */
+
 .no-discount{
     padding-bottom: 34px !important;
 }
@@ -424,3 +447,32 @@ ul,li,ol{
         font-size: 11px;
     }
 }
+ 
+/* footer */
+.fs-12{
+    font-size: 12px;
+}
+footer{
+    background-color: #2C3F46;
+}
+.informations a , .helpful-link a{
+    color: #fff;
+    font-size: 14px;
+
+}
+.informations , .helpful-link {
+    margin-top: 3%;
+}
+.social-footer-container i , .social-footer-container svg{
+    font-size: 50px;
+    margin: 8px 15px;
+    color: white;
+}
+.informations a p ,.helpful-link a p {
+    margin-bottom: 5px;
+}
+ @media screen and (max-width:1200px) {
+    .informations h4 , .helpful-link h4 ,.email-footer-container h5 ,.about-container h4{
+        font-size: 20px;
+    }
+ }
