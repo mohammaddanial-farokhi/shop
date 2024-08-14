@@ -43,7 +43,47 @@
                             </div>
                         </div>
                         <div class=" col-4 col-sm-4 col-md-4 col-lg-2  order-lg-2 order-0 g-0 d-flex justify-content-center align-items-center custom-login">
-                            <button type="button" class="btn btn-outline-light mx-2 login-btn"><span class="d-none d-md-inline  ">ورود/ثبت  نام</span><i class="fa-regular fa-user login-icon"></i></button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#login" class="btn btn-outline-light mx-2 login-btn"><span class="d-none d-md-inline  ">ورود/ثبت  نام</span><i class="fa-regular fa-user login-icon"></i></button>
+                            <div  class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div  class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content" >
+                                    <div class="modal-header border-bottom-0 pb-0" dir="ltr">
+                                        <button  type="button" class="btn-close ms-0 login-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body px-5" >
+                                        <div class="mb-3">
+                                            <h4 class="text-center">ورود به سایت</h4>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            
+                                            <input type="email" class="form-control border-0 border-bottom login-input pb-0"  id="floatingInput" placeholder="name@example.com">
+                                            <label class=" custom-label my-auto" for="floatingInput">نام کاربری</label>
+                                            <div class="position-absolute">
+                                                <i class="fa-solid fa-user login-modal-icon"></i>
+                                            </div>
+                                            
+                                          </div>
+                                          <div class="form-floating">
+                                            <input type="password"  class="form-control border-0 border-bottom login-input pb-0" id="floatingPassword" placeholder="Password">
+                                            <label class="py-auto custom-label" for="floatingPassword">رمز ورود</label>
+                                            <div class="position-absolute">
+                                                <i class="fa-solid fa-lock login-modal-icon"></i>
+                                            </div>
+                                            
+                                          </div>
+                                          <button class="btn login-enter-btn w-100 mt-4 " type="button" >ورود</button>
+                                          <div class="d-flex justify-content-center mt-3">
+                                            <a href="#" class="login-link">فراموشی رمز عبور</a>
+                                          </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class=" d-flex justify-content-center w-100">
+                                            <p class="text-center">حساب کاربری ندارید ؟ <a href="https://fontawesome.com/icons/user?f=classic&s=solid" style="color: #19AA8D;">ایجاد حساب </a></p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                         <div class="col-4 col-sm-4 col-md-4 col-lg-2  my-auto order-lg-3 order-2 ">
                             <div class="basket-wrapper">

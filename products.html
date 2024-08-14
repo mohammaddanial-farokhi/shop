@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <script src="https://kit.fontawesome.com/2d2ceac84d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--slick-->
+    <link rel="stylesheet" href="assets/css/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+    <!--slick-->
+</head>
+<body>
+    <header>
+        <div class="container-fluid bg-top-nav">
+            <div class="row"> 
+                <div class="container">
+                    <div class="row my-2 g-0">
+                        <div class=" col-4 col-sm-4 col-md-4 col-lg-2  d-flex justify-content-center align-items-center order-1 order-sm-1 order-lg-0 ">
+                            <div>
+                                <a href="#">
+                                    <img class="logo-img " src="assets/img/logo1.png" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-9 col-md-9 col-lg-6 my-auto order-lg-1 order-4 order-sm-4">  
+                            <div >
+                                <div class="input-group ">
+                                    <button class="btn btn-light dropdown-toggle search-dropdown custom-btn d-none d-sm-block " type="button" data-bs-toggle="dropdown" aria-expanded="false">جستجوی سریع</button>
+                                    <ul class="dropdown-menu text-center">
+                                      <li><a class="dropdown-item" href="#">موبایل</a></li>
+                                      <li><a class="dropdown-item" href="#">پوشاک</a></li>
+                                      <li><a class="dropdown-item" href="#">کامپیوتر</a></li>
+                                    </ul>
+                                    <input type="text" class="form-control" placeholder="جستجو" aria-label="Text input with dropdown button">
+                                    <button class="btn btn-outline-light custom-btn1" type="button" id="button-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class=" col-4 col-sm-4 col-md-4 col-lg-2  order-lg-2 order-0 g-0 d-flex justify-content-center align-items-center custom-login">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#login" class="btn btn-outline-light mx-2 login-btn"><span class="d-none d-md-inline  ">ورود/ثبت  نام</span><i class="fa-regular fa-user login-icon"></i></button>
+                            <div  class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div  class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content" >
+                                    <div class="modal-header border-bottom-0 pb-0" dir="ltr">
+                                        <button  type="button" class="btn-close ms-0 login-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body px-5" >
+                                        <div class="mb-3">
+                                            <h4 class="text-center">ورود به سایت</h4>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            
+                                            <input type="email" class="form-control border-0 border-bottom login-input pb-0"  id="floatingInput" placeholder="name@example.com">
+                                            <label class=" custom-label my-auto" for="floatingInput">نام کاربری</label>
+                                            <div class="position-absolute">
+                                                <i class="fa-solid fa-user login-modal-icon"></i>
+                                            </div>
+                                            
+                                          </div>
+                                          <div class="form-floating">
+                                            <input type="password"  class="form-control border-0 border-bottom login-input pb-0" id="floatingPassword" placeholder="Password">
+                                            <label class="py-auto custom-label" for="floatingPassword">رمز ورود</label>
+                                            <div class="position-absolute">
+                                                <i class="fa-solid fa-lock login-modal-icon"></i>
+                                            </div>
+                                            
+                                          </div>
+                                          <button class="btn login-enter-btn w-100 mt-4 " type="button" >ورود</button>
+                                          <div class="d-flex justify-content-center mt-3">
+                                            <a href="#" class="login-link">فراموشی رمز عبور</a>
+                                          </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class=" d-flex justify-content-center w-100">
+                                            <p class="text-center">حساب کاربری ندارید ؟ <a href="https://fontawesome.com/icons/user?f=classic&s=solid" style="color: #19AA8D;">ایجاد حساب </a></p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-2  my-auto order-lg-3 order-2 ">
+                            <div class="basket-wrapper">
+                                <div class="dropdown d-inline ">
+                                    <a class="btn btn-secondary dropdown-toggle p-0 border-0 custom-a" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <span class="d-none d-md-inline" >سبد خرید</span>
+                                      <button type="button" class="btn px-1 position-relative">
+                                        <i class="fa-solid fa-cart-shopping basket mx-1"></i>
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger custom-alert">
+                                        <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                      </button>
+                                    </a>
+                                    <ul class="dropdown-menu text-center custom-div custom-ul2" aria-labelledby="dropdownMenuLink">
+                                        <li >
+                                            <a class="dropdown-item d-flex px-0" href="#">
+                                                <button type="button" class="btn-close my-auto custom-close px-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <img class="custom-img" src="assets/img/s24.jpg" alt="">
+                                                <ul>
+                                                    <li><h5>S24 ultra 256gb</h5></li>
+                                                    <li>
+                                                        <ul class=" custom-ul">
+                                                            <li class="custom-li">55,800,000 تومان</li>
+                                                            <li>
+                                                                <div class="d-flex ">
+                                                                    <button type="button" class="btn btn-outline-success basket-icons p-0"><i class="fa-solid fa-plus "></i></button>
+                                                                    <div class="custom-div1 border border-success text-center align-items-center">1</div>
+                                                                    <button type="button" class="btn btn-outline-success basket-icons p-0 "><i class="fa-solid fa-trash-can"></i></button>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" class="btn btn-outline-success mt-2">ثبت نهایی</button>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                  </div>
+                        
+                            </div>
+                        </div>
+                        <div class="col-1 col-md-2 col-lg-12 nav-wrapper order-3 order-lg-4  py-1">
+                            <nav class="nav-helper">
+                                <div class="container px-0">
+                                    <div class="row">
+                                        <nav class="navbar navbar-expand-lg navbar-dark p-0 border-0  ">
+                                            <div class="container px-0">
+                                                <button class="navbar-toggler border-0"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon border-0" ></span>
+                                                </button>
+                                              <div class="collapse navbar-collapse border-0 custom-div2" id="navbarNavDropdown" >
+                                                <ul class="navbar-nav mx-auto">
+                                                    <li class="nav-item dropdown mega-menu-li ">
+                                                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          دسته بندی ها
+                                                        </a>
+                                                        <ul class="dropdown-menu mega-menu-ul pt-3 mt-0 border-0 shadow" aria-labelledby="navbarDropdownMenuLink">
+                                                            <div class="">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12 col-lg-3">
+                                                                            <ul class="mega-ul ">
+                                                                                <li><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i>لوازم خانگی</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> سشوار </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block">ماشین لباس شویی</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> گاز آشپزخانه</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> میز ناهارخوری</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> یخچال فریزر</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> تلوزیون </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> جاروبرقی </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4><i class="fa-solid fa-caret-left ms-2"></i> لپتاپ</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> ایسوس </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> مک </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> ایسر </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i> لباس</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> لباس زنانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> لباس مردانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> کفش‌های ورزشی  </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block">  کیف و کوله‌پشتی  </li></a>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-lg-3">
+                                                                            <ul class="mega-ul">
+                                                                                <li><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i>لوازم خانگی</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> سشوار </li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block">ماشین لباس شویی</li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> گاز آشپزخانه</li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> میز ناهارخوری</li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> یخچال فریزر</li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> تلوزیون </li></a>
+                                                                                <a class="text-decoration-none text-dark  " href="#"><li class="text-end  d-none  d-lg-block"> جاروبرقی </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4><i class="fa-solid fa-caret-left ms-2"></i> لپتاپ</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> ایسوس </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> مک </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> ایسر </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i> لباس</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> لباس زنانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> لباس مردانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block"> کفش‌های ورزشی  </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none  d-lg-block">  کیف و کوله‌پشتی  </li></a>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-lg-3">
+                                                                            <ul class="mega-ul">
+                                                                                <li><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i>لوازم خانگی</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> سشوار </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block">ماشین لباس شویی</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> گاز آشپزخانه</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> میز ناهارخوری</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> یخچال فریزر</li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> تلوزیون </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> جاروبرقی </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4><i class="fa-solid fa-caret-left ms-2"></i> لپتاپ</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> ایسوس </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> مک </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> ایسر </li></a>
+                                                                                <li class="mt-4 custom-li2"><a class="text-decoration-none text-dark text-end" href="#"> <h4> <i class="fa-solid fa-caret-left ms-2"></i> لباس</h4></a></li>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> لباس زنانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> لباس مردانه </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block"> کفش‌های ورزشی  </li></a>
+                                                                                <a class="text-decoration-none text-dark " href="#"><li class="text-end d-none d-lg-block">  کیف و کوله‌پشتی  </li></a>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-sm-3 col-lg-3">
+                                                                            <img class="mega-img position-absolute d-none d-md-block" src="assets/img/items-removebg.png" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <li><a class="dropdown-item " href="#">Action</a></li>
+                                                                <li><a class="dropdown-item " href="#">Another action</a></li>
+                                                                <li><a class="dropdown-item " href="#">Something else here</a></li> -->
+                                                            </div>
+                                                        </ul>
+                                                      </li>
+                                                    <li class="nav-item animated-nav-item">
+                                                        <a class="nav-link  first-animated-a " aria-current="page" href="#">تخفیف ها</a>
+                                                        <a class="nav-link second-animated-a  " aria-current="page" href="#">تخفیف ها</a>
+                                                    </li>
+        
+                                                    <li class="nav-item animated-nav-item">
+                                                        <a class="nav-link first-animated-a" href="#">پر فروش ترین ها</a>
+                                                        <a class="nav-link second-animated-a " href="#">پر فروش ترین ها</a>
+                                                    </li>
+                                                    <li class="nav-item animated-nav-item mb-2">
+                                                        <a class="nav-link first-animated-a" href="#">پشتیبانی</a>
+                                                        <a class="nav-link second-animated-a " href="#">پشتیبانی</a>
+                                                    </li>
+        
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </nav>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--start breadcrump  -->
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-light" >
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item1"><a href="index.html">خانه</a></li>
+                              <li class="breadcrumb-item1 " aria-current="page">لپتاپ</li>
+                            </ol>
+                        </nav>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end breadcrump  -->
+
+        <!--start pruduct  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 ">
+                    <div>
+                        <img class="img-fluid" src="assets/img/pruduct-img-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-5">
+                    <p class="pruduct-title">لپ تاپ 15.3 اینچی اپل مدل MacBook Air MXD23 2024-M3 16GB 512SSD</p>
+                    <div>
+                        <p class="d-inline color-text">رنگ : </p>
+                        <div class="btn-toolbar d-inline position-absolute" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                              <button type="button" class="btn color-input-1 "></button>
+                              
+                            </div>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                              <button type="button" class="btn color-input-2"></button>
+                            </div>
+                          </div>
+                          <div class="wraper mt-4">
+                            <div class="title">
+                                <p class="mt-4 mb-2">ویژگی ها</p>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-md-4  px-1 mb-1">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title" >نسل پردازنده</p>
+                                            <p class="mb-0 p-body">نسل 3 سری M اپل</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4 px-1 mb-1 mb-sm-0">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title"> سری پردازنده</p>
+                                            <p class="mb-0 p-body">M3</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4 px-1 mb-1 mb-sm-0">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title "> ظرفیت حافظه RAM</p>
+                                            <p class="mb-0 p-body">16 گیگابایت</p>   
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4 px-1 mb-1">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title">ظرفیت حافظه داخلی </p>
+                                            <p class="mb-0 p-body">   512 گیگابایت </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4 px-1 mb-sm-1 mb-1 mb-sm-0">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title"> پردازنده گرافیکی </p>
+                                            <p class="mb-0 p-body"> Apple </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4 px-1 mb-1 mb-sm-0">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title">دقت صفحه نمایش </p>
+                                            <p class="mb-0 p-body truncate-2">2880x1864 پیکسل</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4 px-1 mb-1">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title">نرخ بروزرسانی تصویر </p>
+                                            <p class="mb-0 p-body">  60 هرتز  </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4 px-1 mb-1 mb-sm-0">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title">نورپردازی صفحه کلید </p>
+                                            <p class="mb-0 p-body">  تک رنگ  </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 px-1">
+                                        <div class="properties">
+                                            <p class="mb-0 grey-text-color p-title">طبقه‌بندی </p>
+                                            <p class="mb-0 truncate-2 p-body">    کاربری مالتی‌مدیا، مخصوص طراحی</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-10 col-lg-3 mx-auto ">
+                    <div class=" mt-5 ">
+                        <div class="price-info-wrapper px-3">
+                            <div class="py-3 price-toman-wrapper">
+                                <p class="text-center mb-0 price-toman">103,800,000 تومان</p>
+                                <button type="button" class="btn btn-danger w-100 price-text price-btn">افزودن به سبد</button>
+
+                            </div>
+                            <div class="border-bottom py-2">
+                                <p class=" mb-0 price-text"> <i class="fa-solid fa-shield-halved ms-2"></i>گارانتی ۱۸ ماهه پیکسل </p>
+                            </div>
+                            <div class=" py-2">
+                                <p class=" mb-0 price-text grey-text-color"> <i class="fa-solid fa-truck-fast ms-2"></i>ارسال neox از یک روز کاری دیگر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end pruduct  -->
+
+        <!--start icon bar  -->
+        <div class="container-fluid mt-3">
+            <div class="row px-5 border-top pt-4">
+                <div class="col-6 col-md-3 d-flex icon-bar mb-3">
+                    <i class="fa-solid fa-dolly ms-3"></i>
+                    <p class="my-auto fs-14">امکان ارسال اکسپرس</p>
+                </div>
+                <div class="col-6 col-md-3 d-flex icon-bar mb-3">
+                    <i class="fa-solid fa-headset ms-3"></i>
+                    <p class="my-auto fs-14">پشتیبانی 24 ساعته  </p>
+                </div>
+                <div class="col-6 col-md-3 d-flex icon-bar">
+                    <i class="fa-solid fa-calendar-check ms-3"></i>
+                    <p class="my-auto fs-14">  هفت روز ضمانت بازگشت  </p>
+                </div>
+                <div class="col-6 col-md-3 d-flex icon-bar">
+                    <i class="fa-solid fa-award ms-3"></i>
+                    <p class="my-auto fs-14">ضمانت اصالت کالا</p>
+                </div>
+            </div>
+        </div>
+        <!--end icon bar  -->
+
+        <!--start description-->
+
+
+        <!--end description-->
+
+    </main>
+
+    <footer class="container-fluid mt-4">
+        <section class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-flex flex-column text-light">
+                    <div class="text-center mt-2">
+                        <a href="#">
+                            <img class="logo-img " src="assets/img/logo1.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="mb-3 about-container">
+                        <h4>درباره ما</h4>
+                        <p class="fs-14">خدمات مشتریان ما به صورت ۲۴ ساعته آماده‌ی پاسخگویی به سوالات شماست. با خرید از ما، تجربه‌ای لذت‌بخش و مطمئن خواهید داشت</p>
+                    </div>
+                    <div class="contant-container">
+                        <h5 class="mb-3">ارتباط با ما</h5>
+                        <span class="d-block"> <i class="fa-solid fa-phone-volume"></i> 021-12345678</span>
+                        <span> <i class="fa-solid fa-envelope"></i> neox@gamil.com </span>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 informations text-light ">
+                    <h4 class="text-center">اطلاعات</h4>
+                    <a href="#">
+                        <p>درباره ما</p>
+                    </a>
+                    <a href="#">
+                        <p>پرسش های متداول</p>
+                    </a>
+                    <a href="#">
+                        <p>  حریم خصوصی</p>
+                    </a>
+                    <a href="#">
+                        <p>شرایط مرجوعی </p>
+                    </a>
+                    <a href="#">
+                        <p> گارانتی </p>
+                    </a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 helpful-link text-light ">
+                    <h4 class="text-center">دسترسی سریع</h4>
+                    <a href="#">
+                        <p> محصولات</p>
+                    </a>
+                    <a href="#">
+                        <p> پشتیبانی </p>
+                    </a>
+                    <a href="#">
+                        <p> تخفیفات</p>
+                    </a>
+                    <a href="#">
+                        <p> پیگیری سفارشات </p>
+                    </a>
+                </div>
+                <div class="col-10 col-sm-10 col-md-10 col-lg-3 col-xl-4 text-light m-auto email-footer-container">
+                    <h5 class="text-center">اطلاع از اخرین اخبار</h5>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder=" ایمیل شما ..." aria-label="Username" aria-describedby="basic-addon1">
+                        <button type="button" class="btn btn-outline-light">ثبت</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="border-top border-light social-footer-container d-flex justify-content-center">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram " ></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter" ></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin " ></i>
+                        </a>
+                        <a href="#">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                <path fill="#fff" d="M 15.173828 2.609375 C 11.917119 2.5264688 8.94875 4.7335781 8.1875 8.0332031 L 7.078125 12.837891 C 10.172125 7.7938906 15.497719 4.4664844 21.386719 3.8964844 L 16.582031 2.7871094 C 16.110656 2.6782344 15.639072 2.6212187 15.173828 2.609375 z M 23.615234 7 C 16.369702 7.1611924 9.7609531 11.980828 7.6582031 19.314453 C 5.0702031 28.340453 10.289453 37.753797 19.314453 40.341797 C 28.339453 42.929797 37.753797 37.711547 40.341797 28.685547 C 42.929797 19.659547 37.711547 10.246203 28.685547 7.6582031 C 26.993172 7.1729531 25.28728 6.9628018 23.615234 7 z M 35.162109 7.078125 C 40.206109 10.172125 43.533516 15.497719 44.103516 21.386719 L 45.212891 16.582031 C 46.083891 12.811031 43.737797 9.0575 39.966797 8.1875 L 35.162109 7.078125 z M 20.191406 12.589844 C 20.456244 12.610334 20.723031 12.658375 20.988281 12.734375 C 23.111281 13.342375 24.338469 15.556687 23.730469 17.679688 C 23.122469 19.802687 20.906203 21.029875 18.783203 20.421875 C 16.660203 19.813875 15.433969 17.599562 16.042969 15.476562 C 16.575844 13.618937 18.337541 12.446412 20.191406 12.589844 z M 31.726562 15.898438 C 31.991494 15.918996 32.258063 15.966844 32.523438 16.042969 C 34.646437 16.650969 35.874625 18.865281 35.265625 20.988281 C 34.657625 23.110281 32.441359 24.338469 30.318359 23.730469 C 28.195359 23.122469 26.968172 20.908156 27.576172 18.785156 C 28.108172 16.927531 29.872041 15.754527 31.726562 15.898438 z M 24.035156 22.001953 C 25.139156 22.020953 26.017047 22.930156 25.998047 24.035156 C 25.979047 25.139156 25.069844 26.017047 23.964844 25.998047 C 22.860844 25.979047 21.982953 25.069844 22.001953 23.964844 C 22.020953 22.860844 22.930156 21.982953 24.035156 22.001953 z M 16.884766 24.126953 C 17.149697 24.147443 17.416266 24.193531 17.681641 24.269531 C 19.804641 24.877531 21.032828 27.093797 20.423828 29.216797 C 19.814828 31.339797 17.598563 32.566031 15.476562 31.957031 C 13.353562 31.349031 12.125375 29.134719 12.734375 27.011719 C 13.266375 25.154094 15.030244 23.983521 16.884766 24.126953 z M 3.8964844 26.615234 L 2.7871094 31.419922 C 1.9171094 35.190922 4.2622031 38.943453 8.0332031 39.814453 L 12.837891 40.923828 C 7.7948906 37.829828 4.4664844 32.504234 3.8964844 26.615234 z M 28.417969 27.433594 C 28.6829 27.454084 28.951422 27.502125 29.216797 27.578125 C 31.339797 28.186125 32.566031 30.400437 31.957031 32.523438 C 31.348031 34.646437 29.134719 35.873625 27.011719 35.265625 C 24.888719 34.657625 23.661531 32.443313 24.269531 30.320312 C 24.801531 28.462687 26.563447 27.290162 28.417969 27.433594 z M 40.923828 35.162109 C 37.829828 40.205109 32.504234 43.533516 26.615234 44.103516 L 31.419922 45.212891 C 35.190922 46.082891 38.943453 43.737797 39.814453 39.966797 L 40.923828 35.162109 z"></path>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+                    <div dir="ltr" class="copyright text-center mb-2">
+                        <p class="text-light mb-0">2024 &copy; company.ltd. all Rights reserved</p>
+                    </div>
+            </div>
+
+            
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--slick slider-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/css/slick/slick.min.js"></script>   
+    <!--slick slider-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

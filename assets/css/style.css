@@ -532,3 +532,205 @@ footer{
         font-size: 15px;
     }
  }
+
+ /* start login modal */
+.login-btn-close{
+    font-size: 10px;
+}
+.custom-label{
+    top: 8px !important;
+    right: 11px !important;
+    padding-bottom: 5px !important;
+}
+.login-input{
+    height: 50px;
+    padding-right: 20px !important;
+}
+
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+    opacity: 0.65;
+    transform:  translateY(-0.5rem) translateX(0.15rem);
+  }
+  .form-floating > .form-control:focus ~ label,
+  .form-floating > .form-control:not(:placeholder-shown) ~ label,
+  .form-floating > .form-select ~ label {
+    opacity: 0.65;
+    transform:  translateY(-0.5rem) translateX(0.15rem);
+    font-size: 10px;
+  }
+  .form-floating > .form-control:-webkit-autofill ~ label {
+    opacity: 0.65;
+    transform:  translateY(-0.5rem) translateX(0.15rem);
+  }
+
+  .form-control:focus{
+    box-shadow: none;
+  }
+  .login-modal-icon{
+    top: -32px;
+    position: relative;
+  }
+  .login-link {
+    
+    color: #19AA8D;
+  }
+  .login-link:hover{
+    transform: scale(1.05);
+    text-decoration: solid;
+  } 
+  .login-enter-btn{
+    background-color: #19AA8D;
+    color: white;
+  }
+  .login-enter-btn:hover{
+    color: white;
+    transform: scale(1.01);
+  }
+ /* end login modal */
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*start pruduct page */
+
+/* start breadcrump */
+  .breadcrumb-item1 + .breadcrumb-item1::before  {
+    float: righ;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/")  /*rtl: var(--bs-breadcrumb-divider, "/")*/ ;
+  }
+  .breadcrumb-item1 a ,.breadcrumb-item1{
+    font-size: 20px;
+    color: #6c757d;
+  }
+  .pruduct-title{
+    font-size: 19px;
+
+/* end breadcrump */
+
+
+/* start pruduct */
+  }
+  .color-text{
+    vertical-align: -8px;
+  }
+  .color-input-1{
+    width: 35px;
+    height: 35px;
+    background-color: #DEDEDE;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 0 black;
+
+  }
+
+  .color-input-2{
+
+    box-shadow: 0 0 3px 0 black;
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+  }
+  .test-input{
+    background-color:#DEDEDE ;
+    width: 35px;
+    height: 35px;
+  }
+
+  .properties-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .properties{
+    padding: 5px;
+    background-color: #F0F0F1;
+    border-radius: 5px;
+  }
+  .grey-text-color{
+    color: #8D8D8B;
+  }
+  .properties p{
+    font-size: 13px;
+  }
+  .truncate-2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .price-info-wrapper{
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    border: 1px solid #EDEDEF;
+  }
+  .price-text{
+    font-size: 13px;
+  }
+  @media screen and (max-width:1200px) {
+    .pruduct-title{
+        font-size: 15px;
+    }
+    .color-text
+    {
+        font-size: 14px;
+    }
+    .color-input-1 , .color-input-2{
+        width: 30px;
+        height: 30PX;
+    }
+    .p-title {
+        font-size: 11px !important;
+    }
+    .p-body , .price-text {
+        font-size: 12px !important;
+    }
+    .price-toman{
+        font-size: 14px;
+    }
+
+  }
+
+  @media screen and (max-width:992px) {
+    .price-toman-wrapper p , .price-btn{
+        width: 30% !important;
+        display: inline;
+    }
+    .price-toman-wrapper p {
+        align-self: center;
+    }
+    .price-toman-wrapper {
+        padding-bottom: 5px !important;
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+  @media screen and (max-width:992px){
+
+  }
+  /* end pruduct */
+
+  /* start icon bar*/
+  .icon-bar{
+    color:  #A1A3A8 ;
+  }
+  .icon-bar i{
+    font-size: 24px;
+  }
+  @media screen and (max-width:992px) {
+    .icon-bar i{
+        font-size: 20px;
+      }
+    .icon-bar p{
+        font-size: 10px;
+      }
+  }
+  @media screen and (max-width:768px){
+    .icon-bar p{
+        font-size: 12px;
+      }
+  }
+  /* end icon bar*/
+
+
+ /*end pruduct page */
