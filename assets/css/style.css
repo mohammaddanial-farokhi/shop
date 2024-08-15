@@ -733,4 +733,60 @@ footer{
   /* end icon bar*/
 
 
+/* start discription */
+/* .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #81858B;
+  background-color: transparent;
+} */
+ .nav-link1 ,.nav-pills1 .nav-link.active  {
+    background-color: transparent;  
+    color: #81858B;
+    border-radius: 0;
+    border-bottom: 3px solid transparent !important;
+}
+.nav-link1:hover, .nav-link1:focus ,.nav-pills1 .nav-link.active:hover,.nav-pills1 .nav-link.active:focus {
+    color: #EF4056 !important;
+    border-radius: 0;
+    border-bottom: 3px solid #EF4056 !important;
+}
+
+.discription-title{
+    display: inline;
+    border-bottom: 2px solid #EF4056 ;
+    
+}
+.border-gutter{
+    border-bottom: 4px solid #F0F0F1;
+
+}
+.border-fixer{
+    border-bottom: 1px solid white;
+}
+.line-height-30{
+    line-height: 30px;
+}
+.ram-height-fixer{
+    margin-top: 38px !important;
+}
+.comment-star{
+    color: #A1A3A8;
+}
+.test{
+    margin-top: 15px;
+}
+.border-radius-10{
+    border-radius: 10px;
+}
+.question-btn{
+    background-color: #E0E0E2;
+    color: white;
+}
+.question-btn:hover , .question-btn:focus{
+    background-color: #EF4056;
+    color: white;
+}
+
+/* end discription */
+
  /*end pruduct page */
