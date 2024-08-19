@@ -1,3 +1,4 @@
+@import "_new.css";
 @font-face {
     font-family: Vazir-medium;
     src: url(../font/vazir-font-v16.1.0/Vazir-Medium.eot) format("eot") ,
@@ -730,6 +731,9 @@ footer{
         font-size: 12px;
       }
   }
+  .img-product-wrapper{
+    margin: 0 auto;
+  }
   /* end icon bar*/
 
 
@@ -786,7 +790,60 @@ footer{
     background-color: #EF4056;
     color: white;
 }
+@media  screen and (max-width:992px) {
+    .ram-height-fixer{
+        margin-top: 78px !important;
+    }
+}
+@media  screen and (max-width:768px) {
+    .ram-height-fixer{
+        margin-top: 97px !important;
+    }
+    .comment-star{
+        margin-top: -2px !important;
+    }
+    .comment-btn{
+        position: absolute;
+        width: 30% !important;
+        left: 109px;
+        bottom: -277%;
+    }
+    .comment-header{
+        margin-top: 10px !important;
+    }
+    .comment-wrapper{
+        padding-bottom: 3px !important;
+    }
+    #scrollspyHeading4{
+        margin-top: -3px !important;
+    }
 
+}
+@media screen and (max-width:576px) {
+    .comment-btn{
+        bottom: -269% !important;
+    }
+
+}
+
+
+.zoom-mousemove{
+    border: none !important;
+}
+@media (max-width: 735px) {
+    .zoom .zoom-thumb {
+        display: block;
+        position: absolute;
+        top: 85%;
+        height: 100%;
+        right: 20%;
+        text-align: center !important;
+        padding: 5px;
+    }
+    .img-product-wrapper{
+        margin-bottom: 40px;
+    }
+}
 /* end discription */
 
  /*end pruduct page */

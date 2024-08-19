@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="assets/css/slick/slick.css">
     <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
     <!--slick-->
+    <!--zoom image -->
+    <link rel="stylesheet" href="assets/css/zoomy.css">
+    <!--zoom image -->
 </head>
 <body>
     <header>
@@ -268,13 +271,14 @@
         <!--start pruduct  -->
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-4 ">
+                <div class="col-10 col-sm-10 col-lg-4 img-product-wrapper " id="el">
                     <div>
-                        <img class="img-fluid" src="assets/img/pruduct-img-2.jpg" alt="">
+                        <!-- <img class="img-fluid" src="assets/img/pruduct-img-2.jpg" alt=""> -->
+                         <img src="../img/pruduct-img-1.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-sm-8 col-md-8 col-lg-5">
-                    <p class="pruduct-title">لپ تاپ 15.3 اینچی اپل مدل MacBook Air MXD23 2024-M3 16GB 512SSD</p>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                    <p class="pruduct-title ">لپ تاپ 15.3 اینچی اپل مدل MacBook Air MXD23 2024-M3 16GB 512SSD</p>
                     <div>
                         <p class="d-inline color-text">رنگ : </p>
                         <div class="btn-toolbar d-inline position-absolute" role="toolbar" aria-label="Toolbar with button groups">
@@ -435,12 +439,12 @@
                         <div id="scrollspyHeading2" class="mt-4 fs-14">
                             <div class="container pt-3 pb-5 border-gutter">
                                 <div class="row">
-                                    <div class="col-md-2 pe-0">
+                                    <div class="col-sm-12 col-md-2 pe-0">
                                         <div>
                                             <h5 class="discription-title ">مشخصات</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-2 ">
+                                    <div class="col-sm-4 col-md-3 col-lg-2">
                                         <div class=" border-fixer">
                                             <p class="grey-text-color my-3">نوع لپ تاپ و الترابوک</p>
                                         </div>
@@ -494,7 +498,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-8">
+                                    <div class=" col-sm-8 col-md-7 col-lg-8">
                                         <div class="border-bottom ">
                                             <p class=" my-3"> نوت بوک (لپ تاپ)   </p>
                                         </div>
@@ -554,11 +558,11 @@
                             </div>
                         </div>
                         <div id="scrollspyHeading3" class="mt-4">
-                            <div class="container border-gutter pt-3 pb-5">
+                            <div class="container border-gutter pt-3 pb-5 comment-wrapper">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <h5 class="discription-title">دیدگاه ها</h5>
-                                        <p class="mt-5 fs-12 mb-0 comment-star">هنوز امتیازی ثبت نشده است</p>
+                                        <p class="mt-5 fs-12 mb-0 comment-star comment-header">هنوز امتیازی ثبت نشده است</p>
                                         <div>
                                             <i class="fa-solid fa-star comment-star"></i>
                                             <i class="fa-solid fa-star comment-star"></i>
@@ -568,7 +572,7 @@
 
                                         </div>
                                         <p class="mt-3 fs-12 mb-0 comment-star">شما هم درباره این کالا دیدگاه ثبت کنید   </p>
-                                        <button type="button" class="btn btn-outline-danger w-100 mt-2">ثبت دیدگاه</button>
+                                        <button type="button" class="btn btn-outline-danger comment-btn w-100 mt-2">ثبت دیدگاه</button>
                                     </div>
                                     <div class="col-md-9 d-flex align-items-center">
                                         <div class="test">
@@ -586,7 +590,7 @@
                         <div id="scrollspyHeading4"  class="mt-4">
                             <div class="container  pt-3 ">
                                 <h5 class="discription-title">پرسش ها</h5>
-                                <div class="row mt-4 pe-5">
+                                <div class="row mt-4 pe-lg-5">
                                     <div class="col-12">
                                         <div>
                                             <div class="mb-3">
@@ -717,6 +721,25 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="assets/css/slick/slick.min.js"></script>   
     <!--slick slider-->
+
+    <!--zoom image-->
+    <script type="text/javascript" src="assets/js/zoomy.js"></script>   
+    <script>
+        var urls = [
+            'assets/img/pruduct-img-1.jpg',
+            'assets/img/pruduct-img-3.jpg',
+            'assets/img/pruduct-img-4.jpg'
+        ];
+        var options = {
+        //thumbLeft:true,
+        //thumbRight:true,
+        //thumbHide:true,
+        //width:300,
+        //height:500,
+        };
+        $('#el').zoomy(urls,options);
+    </script>
+    <!--zoom image-->
     <script src="assets/js/4665-9788f45d815077e2.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

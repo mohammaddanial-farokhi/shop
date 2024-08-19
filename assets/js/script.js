@@ -86,3 +86,18 @@
     ]
   });
 
+// start zoom image
+// var urls = [
+//   '../img/pruduct-img-1.jpg"',
+//   '../img/pruduct-img-3.jpg',
+//   '../img/pruduct-img-4.jpg'
+// ];
+// var options = {
+//   //thumbLeft:true,
+//   //thumbRight:true,
+//   //thumbHide:true,
+//   //width:300,
+//   //height:500,
+// };
+// $('#el').zoomy(urls,options);
+// end zoom image
